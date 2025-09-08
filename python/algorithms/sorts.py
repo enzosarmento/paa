@@ -14,13 +14,14 @@ def shaker_sort(vector: List[int]):
 
         swapped = False
         end -= 1
-        beginning += 1
+
 
         for i in range(end, beginning, -1):
             if vector[i] < vector[i - 1]:
                 vector[i], vector[i - 1] = vector[i - 1], vector[i]
                 swapped = True
 
+        beginning += 1
 
 def bubble_sort(vector: List[int], swapped: bool = True):
 

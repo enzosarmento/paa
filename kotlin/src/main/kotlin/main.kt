@@ -1,9 +1,8 @@
-import algorithms.bubbleSort
-import algorithms.shakerSort
+import algorithms.mergeSort
 
 fun main() {
-    val list = MutableList(15) { (1..1000).random() }
+    val list = mutableListOf(6, 8, 7, 9, 1, 5, 3, 11)
     println(list)
-    list.bubbleSort()
+    list.mergeSort(0, list.size - 1)
     println(list)
 }
