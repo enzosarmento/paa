@@ -1,8 +1,10 @@
+import algorithms.buildHeap
+import algorithms.heapSort
 import algorithms.mergeSort
 
 fun main() {
-    val list = mutableListOf(6, 8, 7, 9, 1, 5, 3, 11)
-    println(list)
-    list.mergeSort(0, list.size - 1)
-    println(list)
+    val v = mutableListOf(14, 14, 9, 16, 8, 9, 1, 7, 5, 7, 12)
+    println(v)
+    buildHeap(v)
+    println(v)
 }
